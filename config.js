@@ -1,4 +1,4 @@
-bbmodule.exports = {
+module.exports = {
     "bot": {
         "version": "1.3.2", // Current bot version
         "setNewAvatar": false, // Bot does crash if avatar gets changed too often! If you set a new image, set the value to true and the bot sets the new avatar. After change the value back to false!!!!
@@ -9,15 +9,15 @@ bbmodule.exports = {
         "commandPrefix": "+", // Bot prefix to trigger the bot <- if symbol changed it needs to get allowed on check.js
         "cooldownTime": 10, // Cooldown a user need to wait between commands in seconds
         "activeUserTime": 600, // Seconds a user counts as active for rain online users
-        "botID": "672129505841643520", // Bot Discord ID - important else it react to own messages 
+        "botID": "676489751502782474", // Bot Discord ID - important else it react to own messages 
         "adminIDs": [ "366600839042957332", "XXX", "XXX" ], // This discrod user IDs are able to use admin commands and bypass cooldowns
         "moderatorIDs": [ "XXX" ], // This discrod user IDs are able to use moderator commands and bypass cooldowns
         "vipGroupName": "Dev Team", // Users of this group are able to use vip commands and bypass cooldowns
-        "respondChannelIDs": [ "672133801010528279" ], // Discord server channel IDs the bot does listen to
+        "respondChannelIDs": [ "676486915951689788" ], // Discord server channel IDs the bot does listen to
         "commandIgnor": ["battle","cversion","destroy","gift","kill","lock","me","rez","top","use","me","cstart","cstop","cstart","jackpot","summary","shop","activate","mention","claim"], // commands to ignor because of other bots
-        "stakePoolChannelID": "672133892454481943", // If staking is configured use this channel to broadcast stake pool payouts
+        "stakePoolChannelID": "676486969798164480", // If staking is configured use this channel to broadcast stake pool payouts
         "allowDM": true, // Allow or disable direct messages for commands to the bot with true or false
-        "botToken": "NjcyMTI5NTA1ODQxNjQzNTIw.XjG_yQ.3lPZX6YRGXAAUVf8m5vOR5gGlow", // Discord bot token
+        "botToken": "Njc2NDg5NzUxNTAyNzgyNDc0.XkIcjQ.-nQZ4IBmxPNjbDhhRfHpgLhbsos", // Discord bot token
         "listUsers": 30, // Define how many users get listed in one message on rain or drop <- Take care about 2200 letters limit from discord
         "dropBotReactIcon":"✅", // If change -> http://twitter.github.io/twemoji/2/test/preview.html -> click icon copy from popup and past it into the string!, // SOME ARE NOT WORKING!! TEST IT BEFORE MAKE IT LIVE
         "dropReactIcon":"🍀", // If change -> http://twitter.github.io/twemoji/2/test/preview.html -> click icon copy from popup and past it into the string!, // SOME ARE NOT WORKING!! TEST IT BEFORE MAKE IT LIVE
@@ -28,7 +28,7 @@ bbmodule.exports = {
     }, 
     "mysql":{ // Dont forget to import the empty database before starting the bot
         "dbHost": "localhost", // Database server
-        "dbName": "epgtip", // Database name
+        "dbName": "kabberrytip", // Database name
         "dbUser": "root", // Database user
         "dbPassword": "password", // Database password
         "dbPort": 3306, // Database port
@@ -39,11 +39,11 @@ bbmodule.exports = {
         "server": "127.0.0.1", // Wallet server
         "user": "bitcoin", // Wallet username
         "password": "local321", // Wallet password
-        "port": "29443", // Wallet port
+        "port": "34126", // Wallet port
         // TODO ENCRYPTION KEY FOR WALLET
-        "coinSymbol": "Encocoinplus (EPG)", // Coin name
-        "coinSymbolShort": "EPG", // Coin name
-        "thumbnailIcon": "https://i.ibb.co/gP8KnW1/epg-logo-transp-png-128-x-128.png", // Thumbnail icon for all messages (need to get enabled first in code to work = not ready)
+        "coinSymbol": "Kabberry (KKC)", // Coin name
+        "coinSymbolShort": "KKC", // Coin name
+        "thumbnailIcon": "https://kabberry.com/wp-content/uploads/2020/01/Logo.png", // Thumbnail icon for all messages (need to get enabled first in code to work = not ready)
         "check": true, // If enabled it checks (cron) for new transactions
         "credit": true, // If enabled it credits (cron) new transactions
         "depositsToCheck": 60, // How many latest deposits should be checked from the wallet
@@ -54,13 +54,13 @@ bbmodule.exports = {
         "depositsHistory": 5, // How many deposits get shown on deposit history command !! Max value 7 !!
         "withdrawalsHistoryDisplayCount": 5, // How many withdrawals get shown on withdrawal history command !! Max value 5 !!
         "paymentHistoryCoun": 7, // How many payments get shown on withdrawals payments command !! Max value 7 !!
-        "explorerLinkAddress": "https://epgexplorer.encocoin.net/address/?address=", // Explorer link address for addresses
-        "explorerLinkTransaction": "https://epgexplorer.encocoin.net/tx/?txid=", // Explorer link transaction
+        "explorerLinkAddress": "http://explorer.kabberry.com/address/", // Explorer link address for addresses
+        "explorerLinkTransaction": "http://explorer.kabberry.com/tx/", // Explorer link transaction
         "transactionFee": 0.01, // Fee taken for a transaction a user makes - Change value also on help command
         "minWithdrawalValue": 0.1, // Minimum value for withdrawal
         "minTipValue": 0.00001, // Minimum value for tip 
         "maxRainRandomUsers": 15, // Please take care as the bot can crash if the value is to big as for each user a database query is fired!
-        "donateAddress":"75URMTss3y86BSnUZcnz55yZW25ZCsDztr" // Address for donations
+        "donateAddress":"" // Address for donations
     },
     "coinPrice":{ // If enabled the current coin price will be saved next to each transaction made from the bot and into the price history database table
         "enabled": false,
